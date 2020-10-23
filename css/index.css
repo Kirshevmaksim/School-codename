@@ -3,7 +3,6 @@ body{
 }
 .content-width{
 	margin: 0 auto;
-	background-color: grey;
 	width: 100%;
 	max-width: 1170px;
 }
@@ -13,4 +12,30 @@ header{
 	align-items: center;
 	width: 100%;
 }
-header 
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 800px;
+}
+nav div{
+	display: flex;
+	justify-content: space-between;
+	width: 570px;
+}
+nav a{
+	color: black;
+	font-size: 20px;
+	text-decoration: none;
+}
+.button-enter{
+	background-color: #FEB633;
+	font-size: 22px;
+	line-height: 50px;
+	width: 128px;
+	height: 52px;
+	border: none;
+	outline: none;
+	border-radius: 5px;
+	color: white;
+} 
