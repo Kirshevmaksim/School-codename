@@ -85,4 +85,22 @@ nav a{
 	border-radius: 5px;
 	color: white;
 }
+.menu-button{
+	display: flex;
+	text-align: center;
+	width: 110px;
+	height: 90px;
+}
 /*хедер*/
+/*адаптив*/
+@media screen and (max-width: 830px){
+	nav{
+		display: none;
+	}
+}
+@media screen and (min-width: 831px){
+	.menu-button{
+		display: none;
+	}
+}
+/*адаптив*/
