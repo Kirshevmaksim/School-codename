@@ -28,7 +28,7 @@ h2{
 }
 /*главное типо*/
 	main{
-		display: flex;
+		display: flex !important;
 		flex-direction: column;
 	}
 	main h1{
@@ -97,15 +97,15 @@ h2{
 		background-repeat: no-repeat;
 		background-image: url("../resources/svg/menu-button.svg");
 	}
-/*хедер*/
+/*конец хедер*/
 /*слайдер*/
-	section h1{
+	.h1-section{
 		width: 400px;
 		margin: auto;
 		font-size: 67px;
 		text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	}
-	section{
+	section:nth-of-type(1){
 		margin-top: 377px;
 		height: 1160px;
 		width: 100%;
@@ -120,11 +120,38 @@ h2{
 	.row{
 		color: white;
 	}
+	.row h2{
+		margin-left: 30px;
+	}
 	.carousel-row{
 		height: 316px;
 	}
 	.carousel-item{
 		margin-top: 5%;
+	}
+	ol.carousel-indicators{
+		bottom: -60px;
+	}
+	ol.carousel-indicators li{
+		background-color: #E5E5E5;
+	}
+	a.carousel-control-prev{
+		left: -150px;
+		top: 250px;
+	}
+	a.carousel-control-next{
+		right: -150px;
+		top: 250px;
+	}
+	span.carousel-control-prev-icon {
+		background-image: url("../resources/svg/left-arrow.svg") !important;
+		width: 220px;
+		height: 330px;
+	}
+	span.carousel-control-next-icon{
+		background-image: url("../resources/svg/right-arrow.svg") !important;
+		width: 220px;
+		height: 330px;
 	}
 	.curs-blue{
 		background-image: url("../resources/img/blue-curs.png");
@@ -157,16 +184,36 @@ h2{
 	.curs-green{
 		background-image: url("../resources/img/green-curs.png");
 	}
-/*слайдер*/
+/*конец слайдер*/
+/*Почему мы*/
+	section:nth-of-type(2) .row div{
+		background-color: grey;
+		border: 5px dotted yellow;
+	}
+	section:nth-of-type(2){
+
+	}
+/*конец Почему мы*/
+/*Форма заполнения*/
+	section:nth-of-type(3){
+		display: flex;
+		flex-direction: column;
+	}
+	section:nth-of-type(3) div, form{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+/*Форма заполнения*/
 /*адаптив*/
-@media screen and (max-width: 830px){
+@media screen and (max-width: 845px){
 	header{
 		align-items: flex-start;
 		background-color: #FBFBFB;
 		height: 200px; 
 	}
-	nav{
-		display: none;
+	.nav{
+		display: none !important;
 	}
 	main{
 		align-items: center;
@@ -194,7 +241,7 @@ h2{
 		background-position: top -268px center;
 	}
 }
-@media screen and (min-width: 831px){
+@media screen and (min-width: 844px){
 	.menu-button{
 		display: none;
 	}
