@@ -92,7 +92,7 @@ h2{
 		width: 128px;
 		height: 52px;
 		border: none;
-		outline: none;
+		outline: none !important;
 		border-radius: 5px;
 		color: white;
 	}
@@ -223,21 +223,92 @@ h2{
 /*Вопросы*/
 /*Промокод*/
 	section:nth-of-type(4){
-		width: 1920px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: absolute;
+		left: 0;
+		top: 3360px;
+		width: 100%;
 		height: 444px;
 		background-repeat: no-repeat;
 		background-image: url(../resources/img/fon.png);
+	}
+	.h1-section4{
+		font-size: 67px;
+		color: white;
+	}
+	.button-section4{
+		width: 223px;
+		height: 60px;
+		font-weight: normal;
+		margin-top: 70px;
+		font-size: 19px;
+		line-height: 60px;
+		border: none;
+		outline: none;
+		border-radius: 4px;
+		background: #FFFFFF;
+		color: #FEB633;
 	}
 /*Промокод*/
 /*Форма заполнения*/
 	section:nth-of-type(5){
 		display: flex;
 		flex-direction: column;
+		margin-top: 600px;
+		padding-bottom: 400px;
 	}
-	section:nth-of-type(5) div, form{
+	section:nth-of-type(5)>div{
+		display: flex;
+		justify-content: center;
+	}
+	.form-container form{
+		width: 65%;
+	}
+	.form-container p{
+		margin-bottom: 0;
+	}
+	.form-container-div div{
+		margin-top:25px;
+		color: #727B86;
+	}
+	section:nth-of-type(5)>div>div{
 		display: flex;
 		flex-direction: column;
 		align-items: flex-start;
+		width: 35%;
+	}
+	.inactive{
+		color: #A6AAAE;
+	}
+	section:nth-of-type(5) span{
+		font-size: 45px;
+	}
+	input[type="name"], textarea{
+		width: 100%;
+		font-size: 40px;
+	}
+	textarea{
+		height: 200px;
+		resize: none !important;
+	}
+	input{
+		height: 60px;
+	}
+	label{
+		text-transform: uppercase;
+		color: #022144;
+		font-size: 14px;
+	}
+	input[type="tel"], input[type="text"]{
+		width: 48%;
+		font-size: 40px;
+	}
+	.input-container{
+		display: flex;
+		justify-content: space-between;
 	}
 /*Форма заполнения*/
 /*адаптив*/

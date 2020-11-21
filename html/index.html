@@ -125,28 +125,45 @@
 			</div>
 		</section>
 		<section>
-			<h1>Промокод на бесплатное занятие</h1>
-			<button>Показать</button>
+			<h1 class="h1-section4">Промокод на бесплатное занятие</h1>
+			<button class="button-section4">Показать</button>
 		</section>
 		<section>
-			<span>Записаться</span>
-			<span>Задать вопросы</span>
 			<div>
-				<h3>Наши контакты</h3>
-				<p>8000руб за день</p>
-				<p>телефон</p>
+				<span style="margin-right: 10px; margin-bottom: 30px;">Записаться</span>
+				<span class="inactive">Задать вопросы</span>
 			</div>
-			<form>
-				<label for="name">Имя</label>
-				<input type="name" id="name">
-				<label for="tel">Телефон</label>
-				<label for="code"></label>
-				<input type="tel" id="tel">
-				<input type="text" id="code">
-				<label>Сообщение</label>
-				<textarea></textarea>
-				<input type="submit" value="Отправить">
-			</form>
+			<div class="form-container">
+				<div class="form-container-div">
+					<h3>Наши контакты</h3>
+					<div>
+						<p>Почта:</p>
+						<p>CodeDoma@gmail.com</p>
+					</div>
+					<div>
+						<p>Номер:</p>
+						<p>+7()</p>
+					</div>
+				</div>
+				<form>
+					<label for="name">Имя</label><br>
+					<input type="name" id="name"><br>
+					<br>
+					<div class="container row" style="color: black">
+						<label class="col-6" style="padding-left: 0;" for="tel">Номер Телефона</label>
+						<label class="col-6" style="padding-left:30px;" for="code">Промокод</label>
+					</div>
+					<div class="input-container">
+						<input type="tel" id="tel">
+						<input type="text" id="code">
+					</div>
+					<br>
+					<label>Сообщение</label><br>
+					<textarea></textarea><br>
+					<br>
+					<input class="button-enter" type="submit" value="Отправить">
+				</form>
+			</div>
 		</section>
 		<footer></footer>
 	</div>
